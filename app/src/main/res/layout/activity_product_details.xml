@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.ProductDetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/product_image_view"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/product_name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:layout_below="@+id/product_image_view"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/product_price_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:layout_below="@+id/product_name_TV"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/product_description_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:layout_below="@+id/product_price_TV"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+   <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       app:textSize="15dp"
+       android:id="@+id/number_btn"
+       app:initialNumber="1"
+       android:layout_below="@+id/product_description_TV"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="5dp"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/add_product_to_cart_btn"
+        android:text="Add to Cart"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"/>
+
+
+</RelativeLayout>
